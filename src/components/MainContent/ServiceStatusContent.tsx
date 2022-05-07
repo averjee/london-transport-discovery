@@ -43,16 +43,17 @@ const ServiceStatusContent: React.FC<ServiceStatusContentProps> = ({
         {hasDisruptions && (
           <>
             <Divider />
-            <AccordionDetails sx={{ bgcolor: "error.light" }}>
-              {disruptions.map((disruption) => (
+            {disruptions.map((disruption, item) => (
+            <AccordionDetails sx={{ bgcolor: "error.light" }} key={item}>
                 <>
                   <Typography>
                     {disruption.statusSeverityDescription}. Severity:{" "}
                     {disruption.statusSeverity}
                   </Typography>
                 </>
-              ))}
+              
             </AccordionDetails>
+            ))}
           </>
         )}
       </Accordion>
