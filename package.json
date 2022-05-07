@@ -1,6 +1,6 @@
 {
-  "name": "freewheel-london-transport",
-  "version": "0.1.0",
+  "name": "london-transport-discovery",
+  "version": "1.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.6.0",
